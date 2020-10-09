@@ -1,0 +1,37 @@
+<main class="index">
+    <header class="masthead d-flex">
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienens una cuenta?</h3>
+                    <p>Inicia sesion para entrar a la pagina</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesion</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Registrate para que puedas Iniciar Sesion</p>
+                    <button id="btn__registrarse">Registrase</button>
+                </div>
+            </div>
+            <!--Formulario de Login y Registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="php/login_usuario_be.php" method="POST" class="formulario__login">
+                    <h2>Iniciar Sesion</h2>
+                    <input type="text" name="correo" placeholder="Correo Electronico">
+                    <input type="password" name="password" placeholder="Contraseña">
+                    <button>Entrar</button>
+                </form>
+                <!--Registro-->
+                <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" name="nombre_completo" placeholder="Nombre Completo">
+                    <input type="text" name="correo" placeholder="Correo Electronico">
+                    <input type="text" name="usuario" placeholder="Usuario">
+                    <input type="password" name="password" placeholder="Contraseña">
+                    <button>Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </header>
+</main>
